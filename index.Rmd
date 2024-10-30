@@ -9,8 +9,7 @@ output:
 
 # This is Yanhao's awesome website
 
-This is an short intro about the page.
+Hi! I am Yanhao Shen, welcome to my websit!
 
 ![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
 
-navigation for my [github](https://github.com/ys3875)

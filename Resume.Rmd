@@ -9,5 +9,36 @@ output:
 
 # Yanhao's academic and professional experience.
 
+**Education:**
+
+During 2020/10-2024/6, I finished my undergraduate study in **University of California, Santa Barbara** as the major of **financial mathematics and statistics**. \
+For 2024/9-2026/6 expected, I will continue my graduate study in **Columbia university** as the major of **Biostatistics**, track of **public health data science**.
+
+**Work Experience:**
+
+**Tencent Holdings Limited**(2021/11-2022/2) as a digital media operations intern. \
+●	responsible for the development and daily operation of the Tencent Short Video Mini program \
+●	Conducted comparable company analysis, including short video platforms TikTok and Wechat\
+●	Liaised with mega social influencers to build the campaign and video creation to add weight to Tencent's competitive stance\
+●	Collected feedback data and delivered the post-analysis to identify and better comprehend user-product interactions and provide actionable insight for critical business decisions\
+●	Developed technical application standards, platforms, and framework to ensure the technical measures were communicated and used effectively throughout the Tencent program\
+
+**Industrial and Commercial Bank of China(ICBC)**(2023/6-2023/9) as an intern in the department of finance.\
+●	Learn how to read financial reports, do data calculations and study other accounting and finance-related knowledge\
+●	Under the leadership of senior staff, students will understand the front-end to middle-end and back-end functions of the bank and learn the rules of bank operation.\
+●	Firstly try simple front-end work, such as guiding through the process of applying for a credit card. Later, return to the middle end, and assist in docking customers, do credit rating, and assist in credit approval.\
+
+**Leadership & Activities**
+
+**JD.com,inc.**(2021/9-2021/11) as a HR Business Partner Candidate\
+●	Participated in the 1st JD Technology Recruitment Competition to achieve the company’s actual HR KPI\
+●	Developed competitive recruitment strategies to make the company stand out to entice talented employees\
+●	Earned the first place in both team and individual competitions and gained the bonus, certificate, and intern opportunities\
+
+**Research on financial engineering** as a group menber(2023/6-2023/8)
+●	Doing research on financial analysis and study on behavior of financial model 
+●	Generate an essay and was accepted by ICFTBA, and will be published in AEMPS as leading author. It will be submitted to CPCI, Google scholar, and other database for indexing.
+
+
 
 

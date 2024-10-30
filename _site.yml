@@ -9,6 +9,10 @@ navbar:
       href: mailto:<ys3875@cumc.columbia.com>
     - icon: fa-github fa-lg
       href: http://github.com/ys3875/
+    - icon: fa-brands fa-linkedin
+      href: https://www.linkedin.com/in/yanhao-shen-834032336/
+    - icon: fa-solid fa-phone
+      href: tel:+18059711568
 output:
   html_document:
     theme: cerulean
