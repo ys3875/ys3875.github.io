@@ -1,0 +1,57 @@
+---
+title: "Dashboard!!"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+```{r}
+data("instacart")
+
+instacart_yogurt = instacart |>
+  filter(aisle == "yogurt")|>
+  select(order_id,product_id,add_to_cart_order,reordered,order_dow,order_hour_of_day,product_name,days_since_prior_order)|>
+  drop_na(days_since_prior_order)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+instacart_yogurt |>
+  mutate(product_name=fct_reorder(product_name,add_to_cart_order))|>
+  plot_ly(y=~add_to_cart_order,color=~product_name,type='box',colors='viridis')|>
+  layout(xaxis=list(title='',showticklabels=FALSE),width=1000)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+instacart_yogurt |>
+  plot_ly(
+    x=~add_to_cart_order, y=~order_hour_of_day, type="scatter",mode = "markers",
+    color = ~reordered)
+```
+
+### Chart C
+
+```{r}
+instacart_yogurt|>
+  count(product_name)|>
+  mutate(product_name=fct_reorder(product_name,n))|>
+  plot_ly(x=~product_name,y=~n,color = ~product_name,type='bar', colors = 'viridis')|>
+    layout(xaxis=list(title='',showticklabels=FALSE),width=800)
+```
+

@@ -1,15 +1,45 @@
 ---
-title: "My awesome website"
+title: "My awesome we"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
-# This is Yanhao's awesome website
+# Here are some plots
 
-Hi! I am Yanhao Shen, welcome to my websit!
+```{r}
+library(p8105.datasets)
+library(tidyverse)
+library(plotly)
+```
+```{r}
+data("instacart")
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+instacart_yogurt = instacart |>
+  filter(aisle == "yogurt")|>
+  select(order_id,product_id,add_to_cart_order,reordered,order_dow,order_hour_of_day,product_name,days_since_prior_order)|>
+  drop_na(days_since_prior_order)
+```
+
+```{r}
+instacart_yogurt |>
+  plot_ly(
+    x=~add_to_cart_order, y=~order_hour_of_day, type="scatter",mode = "markers",
+    color = ~reordered)
+```
+```{r}
+instacart_yogurt |>
+  mutate(product_name=fct_reorder(product_name,add_to_cart_order))|>
+  plot_ly(y=~add_to_cart_order,color=~product_name,type='box',colors='viridis')|>
+  layout(xaxis=list(title='',showticklabels=FALSE),width=1200)
+
+```
+```{r}
+instacart_yogurt|>
+  count(product_name)|>
+  mutate(product_name=fct_reorder(product_name,n))|>
+  plot_ly(x=~product_name,y=~n,color = ~product_name,type='bar', colors = 'viridis')|>
+    layout(xaxis=list(title='',showticklabels=FALSE),width=1200)
+```
 
